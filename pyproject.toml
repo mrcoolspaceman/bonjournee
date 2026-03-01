@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "bonjournee"
+version = "0.1.0"
+description = "Personal Commute Reliability Engine (PCRE)"
+readme = "README.md"
+requires-python = ">=3.11"
+authors = [{ name = "PCRE Maintainers" }]
+dependencies = [
+  "requests>=2.31",
+]
+
+[project.scripts]
+bonjournee = "bonjournee.main:main"
